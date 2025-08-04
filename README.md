@@ -27,21 +27,21 @@ git clone https://github.com/zzycarrot/ossf-cve-benchmark.git
 - `ANALYZER_PATH = "ossf-cve-benchmark\contrib\tools\secanalyzer\.." `for example
 ### step 2. build docker image
 ```
-docker build --progress=plain -t Jsbenchmark .
+docker build --progress=plain -t jsbenchmark .
 ```
 ### step 3. run analyzer
 - run single test unit
 ```
-run -it --name benchmark Jsbenchmark run --config /ossf/config.json --tool nodejsscan-default CVE-2018-3713
+run -it --name benchmark jsbenchmark run --config /ossf/config.json --tool nodejsscan-default CVE-2018-3713
 ```
 - run all tests 
 ```
-run -it --name benchmark Jsbenchmark run --config /ossf/config.json --tool nodejsscan-default "*"
+run -it --name benchmark jsbenchmark run --config /ossf/config.json --tool nodejsscan-default "*"
 ```
 - (you can use `docker rm -f benchmark` to delete)
 ### step 4. save snapshot
 ```
-docker commit Jsbenchmark benchmark-snapshot
+docker commit jsbenchmark benchmark-snapshot
 ```
 ### step 5. get report 
 - you can view report on `http://127.0.0.1:8081/`
@@ -55,6 +55,6 @@ docker run -it --entrypoint=/bin/sh debug-image
 ```
 or
 ```
-docker commit Jsbenchmark debug-image
+docker commit jsbenchmark debug-image
 docker run -it --entrypoint=/bin/sh debug-image 
 ```
