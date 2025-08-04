@@ -22,7 +22,7 @@
         "/ossf/build/ts/contrib/tools/nodejsscan/src/secanalyzer.js"
       ],
       "options": {
-        "secanalyzerDir":"/ossf/ossf-cve-benchmark/contrib/tools/secanalyzer"
+        "secanalyzerDir":"/ossf/contrib/tools/secanalyzer"
       }
     },
     "nodejsscan-default": {

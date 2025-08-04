@@ -24,7 +24,7 @@ git -b docker clone https://github.com/zzycarrot/ossf-cve-benchmark.git
   }
 }
 ```
-- `ANALYZER_PATH = "ossf-cve-benchmark\contrib\tools\secanalyzer\.." `for example
+- clone secanalyzer to `ANALYZER_PATH`, (`ANALYZER_PATH = "contrib\tools\secanalyzer\.." `for example)
 ### step 2. build docker image
 ```
 docker build --progress=plain -t jsbenchmark .
