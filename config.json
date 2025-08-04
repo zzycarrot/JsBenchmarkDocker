@@ -1,0 +1,38 @@
+{
+  "tools": {
+     "eslint-default": {
+         "bin": "node",
+         "args": [ "/ossf/build/ts/contrib/tools/eslint/src/eslint.js" ],
+         "options": {
+           "eslintDir": "/ossf/analysis-tools/eslint-dir"
+         }
+       },
+    "codeql-default": {
+      "bin": "node",
+      "args": [
+      "C:\\Users\\666\\Desktop\\zzy\\code\\ossf-cve-benchmark\\build\\ts\\contrib\\tools\\codeql\\src\\codeql.js"
+      ],
+      "options": {
+        "codeql": "C:\\Users\\666\\Desktop\\zzy\\code\\ossf-cve-benchmark\\contrib\\tools\\codeql\\installers\\codeql-default\\codeql-bundle-win64.tar\\codeql-bundle-win64\\codeql\\codeql.exe"
+      }
+    },
+    "secanalyzer-default": {
+      "bin": "node",
+      "args": [
+        "C:\\Users\\666\\Desktop\\zzy\\code\\ossf-cve-benchmark\\build\\ts\\contrib\\tools\\secanalyzer\\src\\secanalyzer.js"
+      ],
+      "options": {
+        "secanalyzerDir":"C:\\Users\\666\\Desktop\\zzy\\code\\ossf-cve-benchmark\\contrib\\tools\\secanalyzer\\path\\secanalyzer_old\\secanalyzer"
+      }
+    },
+    "nodejsscan-default": {
+      "bin": "node",
+      "args": [
+        "/ossf/build/ts/contrib/tools/nodejsscan/src/nodejsscan.js"
+      ],
+      "options": {
+        "njsscanDir": "/ossf/analysis-tools/nodejsscan-dir"
+      }
+    }
+  }
+}
