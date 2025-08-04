@@ -12,6 +12,21 @@ RUN apt-get update && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
 
+# 添加Adoptium仓库（提供OpenJDK二进制文件）
+RUN wget -O - https://packages.adoptium.net/artifactory/api/gpg/key/public | apt-key add - && \
+    echo "deb https://packages.adoptium.net/artifactory/deb $(awk -F= '/^VERSION_CODENAME/{print$2}' /etc/os-release) main" | tee /etc/apt/sources.list.d/adoptium.list
+
+# 安装JDK 17
+RUN apt-get update && \
+    apt-get install -y temurin-17-jdk && \
+    java -version && \
+    rm -rf /var/lib/apt/lists/*
+
+# 设置JDK环境变量
+ENV JAVA_HOME=/usr/lib/jvm/temurin-17-jdk-amd64
+ENV PATH="${JAVA_HOME}/bin:${PATH}"
+
+
 WORKDIR /ossf
 
 

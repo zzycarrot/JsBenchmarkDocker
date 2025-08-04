@@ -32,7 +32,7 @@ docker build --progress=plain -t jsbenchmark .
 ### step 3. run analyzer
 - run single test unit
 ```
-run -it --name benchmark jsbenchmark run --config /ossf/config.json --tool nodejsscan-default CVE-2018-3713
+docker run -it --name benchmark jsbenchmark run --config /ossf/config.json --tool nodejsscan-default CVE-2018-3713
 ```
 - run all tests 
 ```

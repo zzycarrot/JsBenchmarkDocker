@@ -1,3 +1,4 @@
 [submodule "ossf-cve-benchmark"]
 	path = ossf-cve-benchmark
 	url = https://github.com/zzycarrot/ossf-cve-benchmark.git
+	branch = docker
