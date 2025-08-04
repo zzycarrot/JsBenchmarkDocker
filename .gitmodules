@@ -1,0 +1,3 @@
+[submodule "ossf-cve-benchmark"]
+    path = ChatAnalyzer
+    url = https://github.com/zzycarrot/ossf-cve-benchmark.git
