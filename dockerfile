@@ -60,11 +60,3 @@ EXPOSE 8080
 ENTRYPOINT [ "/ossf/bin/cli.sh" ]
 
 # CMD ["bin/cli.sh", "report", "--kind", "txt", "--tool", "eslint-default", "--tool", "codeql-default", "--tool", "ideal-analysis", "--tool", "nodejsscan-default", "*"]
-
-# docker build --progress=plain -t ossf-benchmark-recharts .
-# docker run -it --entrypoint=/bin/sh debug-image
-# docker run ossf-benchmark-recharts run --tool eslint-default '*'
-# docker run debug-image report --kind server --tool nodejsscan-default "*"
-# docker run debug-image run --config /ossf/config.json --tool eslint-default CVE-2018-3713 
-# docker run debug-image run --config /ossf/config.json --tool nodejsscan-default CVE-2018-3713
-# docker run -it --rm --name benchmarknew benchmark-snapshot report --kind server --tool nodejsscan-default "*"

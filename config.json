@@ -19,10 +19,10 @@
     "secanalyzer-default": {
       "bin": "node",
       "args": [
-        "C:\\Users\\666\\Desktop\\zzy\\code\\ossf-cve-benchmark\\build\\ts\\contrib\\tools\\secanalyzer\\src\\secanalyzer.js"
+        "/ossf/build/ts/contrib/tools/nodejsscan/src/secanalyzer.js"
       ],
       "options": {
-        "secanalyzerDir":"C:\\Users\\666\\Desktop\\zzy\\code\\ossf-cve-benchmark\\contrib\\tools\\secanalyzer\\path\\secanalyzer_old\\secanalyzer"
+        "secanalyzerDir":"/ossf/ossf-cve-benchmark/contrib/tools/secanalyzer"
       }
     },
     "nodejsscan-default": {
