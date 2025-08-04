@@ -6,7 +6,7 @@
 ```
 git clone https://github.com/zzycarrot/JsBenchmarkDocker.git
 cd JsBenchmarkDocker
-git clone https://github.com/zzycarrot/ossf-cve-benchmark.git
+git -b docker clone https://github.com/zzycarrot/ossf-cve-benchmark.git
 ```
 - `config.json` is for configuring analyzer tool
 ```json
