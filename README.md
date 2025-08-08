@@ -15,7 +15,7 @@ git clone -b docker https://github.com/zzycarrot/ossf-cve-benchmark.git
     "secanalyzer-default": {
       "bin": "node",
       "args": [
-        "/ossf/build/ts/contrib/tools/nodejsscan/src/secanalyzer.js"
+        "/ossf/build/ts/contrib/tools/secanalyzer/src/secanalyzer.js"
       ],
       "options": {
         "secanalyzerDir": "/ossf/${ANALYZER_PATH}"
