@@ -6,7 +6,7 @@
 ```
 git clone https://github.com/zzycarrot/JsBenchmarkDocker.git
 cd JsBenchmarkDocker
-git -b docker clone https://github.com/zzycarrot/ossf-cve-benchmark.git
+git clone -b docker https://github.com/zzycarrot/ossf-cve-benchmark.git
 ```
 - `config.json` is for configuring analyzer tool
 ```json
@@ -36,7 +36,7 @@ docker run -it --name benchmark jsbenchmark run --config /ossf/config.json --too
 ```
 - run all tests 
 ```
-run -it --name benchmark jsbenchmark run --config /ossf/config.json --tool nodejsscan-default "*"
+docker run -it --name benchmark jsbenchmark run --config /ossf/config.json --tool nodejsscan-default "*"
 ```
 - (you can use `docker rm -f benchmark` to delete)
 ### step 4. save snapshot
