@@ -47,7 +47,7 @@ RUN ls -l /ossf/contrib/tools/nodejsscan/installers/install.sh
 RUN sed -i 's/\r$//' /ossf/contrib/tools/nodejsscan/installers/install.sh && \  
     chmod +x /ossf/contrib/tools/nodejsscan/installers/install.sh && \  
     head -1 /ossf/contrib/tools/nodejsscan/installers/install.sh | grep -q '^#!' || \  
-    sed -i '1i #!/bin/sh' /ossf/contrib/tools/eslint/installers/install.sh
+    sed -i '1i #!/bin/sh' /ossf/contrib/tools/nodejsscan/installers/install.sh
 RUN /ossf/contrib/tools/nodejsscan/installers/install.sh /ossf/analysis-tools/nodejsscan-dir
 
 RUN ls -l /ossf/contrib/tools/eslint/installers/install.sh

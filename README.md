@@ -41,7 +41,7 @@ docker run -it --name benchmark jsbenchmark run --config /ossf/config.json --too
 - (you can use `docker rm -f benchmark` to delete)
 ### step 4. save snapshot
 ```
-docker commit jsbenchmark benchmark-snapshot
+docker commit benchmark benchmark-snapshot
 ```
 ### step 5. get report 
 - you can view report on `http://127.0.0.1:8081/`
